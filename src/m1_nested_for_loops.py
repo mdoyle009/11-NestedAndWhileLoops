@@ -20,8 +20,13 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+location = ["Outer: ", "Inner: "]
+for x in location:
+    for y in range(1, 4):
+        print(f"{x}: {y}")
+
 ###############################################################################
-# TODO: 2. (4 pts)
+# DONE: 2. (4 pts)
 #
 #   For this _TODO_, write a function called many_triangles() that takes two
 #   parameters:
@@ -49,3 +54,9 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+        
+def many_triangles(num_of_triangles, size):
+    for x in range(num_of_triangles):
+        for y in range(1, size + 1):
+            print("*" * y)
+many_triangles(2, 3)
