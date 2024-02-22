@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# DONE: 1. (3 pts)
 #
 #   For this _TODO_, write a block of code that uses a nested for loop to print
 #   the following output:
@@ -20,10 +20,10 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
-location = ["Outer: ", "Inner: "]
-for x in location:
+for x in range(1, 3):
+    print(f"Outer: {x}")
     for y in range(1, 4):
-        print(f"{x}: {y}")
+        print(f"Inner: {y}")
 
 ###############################################################################
 # DONE: 2. (4 pts)
